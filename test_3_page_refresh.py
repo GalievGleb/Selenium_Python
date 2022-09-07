@@ -23,3 +23,5 @@ warring_text = driver.find_element(By.XPATH, "//h3[@data-test='error']")
 value_warring_text = warring_text.text
 assert value_warring_text == "Epic sadface: Username and password do not match any user in this service"
 print("Good Test")
+
+driver.refresh()
