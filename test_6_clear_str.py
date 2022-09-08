@@ -1,4 +1,5 @@
 import datetime
+import time
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -14,9 +15,15 @@ password_all = "secret_sauce"
 user_name = driver.find_element(By.ID, "user-name") #обращение к элемену через id
 user_name.send_keys(login_standard_user)
 print("Input Login")
-password = driver.find_element(By.CSS_SELECTOR, "#password")
-password.send_keys(password_all)
-print("Input Password")
-button_login = driver.find_element(By.XPATH, "//input[@value='Login']")
-button_login.click()
-print("Click Login Button")
+
+time.sleep(2)
+user_name.clear()
+
+# password = driver.find_element(By.CSS_SELECTOR, "#password")
+# password.send_keys(password_all)
+# print("Input Password")
+# button_login = driver.find_element(By.XPATH, "//input[@value='Login']")
+# button_login.click()
+# print("Click Login Button")
+
+
