@@ -20,10 +20,3 @@ print("Input Password")
 button_login = driver.find_element(By.XPATH, "//input[@value='Login']")
 button_login.click()
 print("Click Login Button")
-#text_products = driver.find_element(By.XPATH, "//span[@class='title']")#сохранили в переменную локатор, который сохраняет слово products
-#value_text_products = text_products.text#метод текст считывает значение локатора(тоесть слово products). получается в этой переменной сохранили слово products
-#print(value_text_products)
-#assert value_text_products == "PRODUCTS"#производим сравнение
-now_date = datetime.datetime.utcnow().strftime("%Y.№m.%d.%H.%M.%S")
-name_screenshot = 'screenshot' + now_date + '.png'
-driver.save_screenshot('C:\\Users\\user\\Desktop\\PycharmProjects\\pythonselenium\\screen\\' + name_screenshot)
