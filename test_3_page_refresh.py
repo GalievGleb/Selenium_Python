@@ -24,4 +24,8 @@ value_warring_text = warring_text.text
 assert value_warring_text == "Epic sadface: Username and password do not match any user in this service"
 print("Good Test")
 
+<<<<<<< HEAD
 driver.refresh()
+=======
+driver.refresh()
+>>>>>>> 25e35b307193c80b05dcfd28d6d2758aa064563f
