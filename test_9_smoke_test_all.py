@@ -77,7 +77,7 @@ print("Click Continue")
 
 """Сравниваем цену которая была в главном меню с ценой товаров которая у нас выходит перед оплатой"""
 
-summ_price_orig = value_price_product_2 + value_price_product_1
+summ_price_orig = float(value_price_product_2.replace('$', '')) + float(value_price_product_1.replace('$',''))
 print(summ_price_orig)
 
 summery_price = driver.find_element(By.XPATH, "//*[@id='checkout_summary_container']/div/div[2]/div[5]")
