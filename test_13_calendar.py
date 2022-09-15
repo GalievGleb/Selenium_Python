@@ -9,10 +9,6 @@ driver = webdriver.Chrome(executable_path='C:\\Users\\user\\Desktop\\PycharmProj
 base_url = 'https://demoqa.com/date-picker'#совершенствуем код в переменную пихаем юрл который используем, удобно для ооп и для списков юрл
 driver.get(base_url)#указываем url на который мы хотим заходить
 driver.maximize_window()#открывается браузер на максимальный экран
-
-# check_box = driver.find_element(By.XPATH, "//button[@aria-label='Toggle']") #обращение к элемену через id
-# check_box.click()
-
 new_date = driver.find_element(By.XPATH, "//input[@id='datePickerMonthYearInput']")
 new_date.click()
 time.sleep(5)
