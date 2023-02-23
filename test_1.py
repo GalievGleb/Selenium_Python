@@ -20,4 +20,3 @@ print("Input Password")
 button_login = driver.find_element(By.XPATH, "//input[@value='Login']")
 button_login.click()
 print("Click Login Button")
-
