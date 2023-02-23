@@ -10,5 +10,3 @@ driver.maximize_window()#открывается браузер на максим
 
 check_box = driver.find_element(By.XPATH, "//button[@aria-label='Toggle']") #обращение к элемену через id
 check_box.click()
-
-
